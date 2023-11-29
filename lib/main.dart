@@ -1,11 +1,5 @@
-import 'dart:ffi';
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:fluttergen/api_bindings.dart';
-import 'package:fluttergen/example.dart';
-import 'package:fluttergen/exampleKotlin.dart';
-
+import 'package:fluttergen/sum_api.dart';
 
 void main() {
   runApp(const MyApp());
@@ -77,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
             TextField(
               onChanged: (text) {
                 setState(() {
-                  firstValue =  int.parse(text);
+                  firstValue = int.parse(text);
                 });
               },
               keyboardType: const TextInputType.numberWithOptions(signed: true, decimal: false),
@@ -91,23 +85,12 @@ class _MyHomePageState extends State<MyHomePage> {
               keyboardType: const TextInputType.numberWithOptions(signed: true, decimal: false),
             ),
             Text(
-              'Sum is ${_getSum(firstValue, secondValue)}',
+              'Sum is ${sum(firstValue, secondValue)}',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
-  }
-}
-
-int _getSum(int a, int b){
-  if(Platform.isAndroid){
-    return Example.sum(a, b);
-  }else{
-    final lib = SwiftLibrary(DynamicLibrary.process());
-    final exa = ExampleObjc.alloc(lib);
-
-    return ExampleObjc.add_to_(lib, a, b);
   }
 }
