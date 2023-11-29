@@ -52,3 +52,7 @@ app.*.map.json
 **/*.gm.dart
 **/*.graphql.dart
 pubspec_overrides.yaml
+
+
+*.cxx
+app/.cxx/*
