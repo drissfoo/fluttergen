@@ -27,6 +27,7 @@ migrate_working_dir/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
 /build/
@@ -41,3 +42,13 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Generated files
+**/*.gr.dart
+**/*.module.dart
+**/*.freezed.dart
+**/*.config.dart
+**/*.g.dart
+**/*.gm.dart
+**/*.graphql.dart
+pubspec_overrides.yaml
