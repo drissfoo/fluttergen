@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../ffigen.schema.json
+
+name: SwiftLibrary
+description: Bindings for objc.
+language: objc
+output: 'api_bindings.dart'
+exclude-all-by-default: true
+objc-interfaces:
+  include:
+    - 'ExampleObjc'
+headers:
+  entry-points:
+    - '/Users/drissfoo/Documents/dev/gsg/mobile/flutter/flutterProjects/fluttergen/ios/Runner/ExampleObjc.h'
+    - '/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSObject.h'
+preamble: |
+  // ignore_for_file: camel_case_types, non_constant_identifier_names
+  // ignore_for_file: unused_element, unused_field, return_of_invalid_type
+  // ignore_for_file: void_checks, annotate_overrides
+  // ignore_for_file: no_leading_underscores_for_local_identifiers
+  // ignore_for_file: library_private_types_in_public_api

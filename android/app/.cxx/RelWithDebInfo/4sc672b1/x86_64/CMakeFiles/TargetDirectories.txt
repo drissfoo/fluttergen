@@ -1,0 +1,3 @@
+/Users/drissfoo/Documents/dev/gsg/mobile/flutter/flutterProjects/fluttergen/android/app/.cxx/RelWithDebInfo/4sc672b1/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/drissfoo/Documents/dev/gsg/mobile/flutter/flutterProjects/fluttergen/android/app/.cxx/RelWithDebInfo/4sc672b1/x86_64/CMakeFiles/edit_cache.dir
+/Users/drissfoo/Documents/dev/gsg/mobile/flutter/flutterProjects/fluttergen/android/app/.cxx/RelWithDebInfo/4sc672b1/x86_64/CMakeFiles/example.dir

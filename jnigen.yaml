@@ -1,0 +1,20 @@
+android_sdk_config:
+  add_gradle_deps: true
+
+summarizer:
+  backend: asm
+suspend_fun_to_async: true
+
+output:
+  c:
+    library_name: exampleKotlin
+    path: src/example/
+  dart:
+    path: lib/exampleKotlin.dart
+    structure: single_file
+
+source_path:
+  - 'android/app/src/main/kotlin'
+
+classes:
+  - 'com.example.fluttergen.ExampleKotlin'
