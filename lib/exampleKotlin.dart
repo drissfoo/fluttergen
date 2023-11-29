@@ -24,7 +24,7 @@ import "package:jni/jni.dart" as jni;
 // Auto-generated initialization code.
 
 final ffi.Pointer<T> Function<T extends ffi.NativeType>(String sym) jniLookup =
-    ProtectedJniExtensions.initGeneratedLibrary("exampleKotlin");
+    ProtectedJniExtensions.initGeneratedLibrary("example");
 
 /// from: com.example.fluttergen.ExampleKotlin
 class ExampleKotlin extends jni.JObject {

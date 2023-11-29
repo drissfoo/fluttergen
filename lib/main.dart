@@ -4,8 +4,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:fluttergen/api_bindings.dart';
 import 'package:fluttergen/example.dart';
+import 'package:fluttergen/exampleKotlin.dart';
 
-import 'exampleKotlin.dart';
 
 void main() {
   runApp(const MyApp());
@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 int _getSum(int a, int b){
   if(Platform.isAndroid){
-    return ExampleKotlin().sumKtc(a, b);
+    return Example.sum(a, b);
   }else{
     final lib = SwiftLibrary(DynamicLibrary.process());
     final exa = ExampleObjc.alloc(lib);

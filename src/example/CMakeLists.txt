@@ -5,17 +5,17 @@
 # the plugin to fail to compile for some customers of the plugin.
 cmake_minimum_required(VERSION 3.10)
 
-project(exampleKotlin VERSION 0.0.1 LANGUAGES C)
+project(example VERSION 0.0.1 LANGUAGES C)
 
-add_library(exampleKotlin SHARED
-  "./exampleKotlin.c"
+add_library(example SHARED
+  "./example.c"
 )
 
-set_target_properties(exampleKotlin PROPERTIES
-  OUTPUT_NAME "exampleKotlin"
+set_target_properties(example PROPERTIES
+  OUTPUT_NAME "example"
 )
 
-target_compile_definitions(exampleKotlin PUBLIC DART_SHARED_LIB)
+target_compile_definitions(example PUBLIC DART_SHARED_LIB)
 
 if(WIN32)
 	set_target_properties(${TARGET_NAME} PROPERTIES
@@ -23,10 +23,10 @@ if(WIN32)
 endif()
 
 if (ANDROID)
-	target_link_libraries(exampleKotlin log)
+	target_link_libraries(example log)
 else()
 	find_package(Java REQUIRED)
 	find_package(JNI REQUIRED)
 	include_directories(${JNI_INCLUDE_DIRS})
-	target_link_libraries(exampleKotlin ${JNI_LIBRARIES})
+	target_link_libraries(example ${JNI_LIBRARIES})
 endif()
