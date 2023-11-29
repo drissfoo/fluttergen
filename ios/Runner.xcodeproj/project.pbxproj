@@ -17,6 +17,7 @@
 		9E32EC129930B3B6D6B00F26 /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C545EA40A30FD00CE57768 /* Pods_RunnerTests.framework */; };
 		C8C994CEFD66507CB2794C48 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07106A3A18707BCBB09651B /* Pods_Runner.framework */; };
 		D0AEC1F82B167CF400C75AA5 /* ExampleObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AEC1F72B167CF400C75AA5 /* ExampleObjc.m */; };
+		D0B333E02B1761BE00CF23E8 /* ExampleSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B333DF2B1761BE00CF23E8 /* ExampleSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		B29C144FE6500E142338F2C0 /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.release.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
 		D0AEC1F62B1637F800C75AA5 /* ExampleObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleObjc.h; sourceTree = "<group>"; };
 		D0AEC1F72B167CF400C75AA5 /* ExampleObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleObjc.m; sourceTree = "<group>"; };
+		D0B333DF2B1761BE00CF23E8 /* ExampleSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSwift.swift; sourceTree = "<group>"; };
 		F874AE9A9069AEC4F29F3901 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +167,7 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 				D0AEC1F62B1637F800C75AA5 /* ExampleObjc.h */,
 				D0AEC1F72B167CF400C75AA5 /* ExampleObjc.m */,
+				D0B333DF2B1761BE00CF23E8 /* ExampleSwift.swift */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				D0B333E02B1761BE00CF23E8 /* ExampleSwift.swift in Sources */,
 				D0AEC1F82B167CF400C75AA5 /* ExampleObjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
